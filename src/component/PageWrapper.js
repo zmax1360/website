@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 class PageWrapper extends Component {
   render() {
     return (
@@ -8,9 +9,6 @@ class PageWrapper extends Component {
           id="mainNav"
         >
           <div className="container">
-            <a className="navbar-brand" href="#page-top">
-              <img src="assets/img/navbar-logo.svg" alt="..." />
-            </a>
             <button
               className="navbar-toggler"
               type="button"
@@ -26,9 +24,9 @@ class PageWrapper extends Component {
             <div className="collapse navbar-collapse" id="navbarResponsive">
               <ul className="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                 <li className="nav-item">
-                  <a className="nav-link" href="#services">
-                    Services
-                  </a>
+                  <Link className="nav-link" to="/">
+                    Home
+                  </Link>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link" href="#portfolio">
@@ -36,9 +34,9 @@ class PageWrapper extends Component {
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#about">
+                  <Link className="nav-link" to="/about">
                     About
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link" href="#team">

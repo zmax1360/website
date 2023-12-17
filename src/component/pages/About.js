@@ -1,26 +1,24 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
-function Home() {
+function About() {
   const navigation = useNavigate()
   const handleClick = () => {
-    navigation('/about')
+    navigation('/')
   }
   return (
     <div>
       <header className="masthead">
-        <div className="container">
-          <div className="masthead-subheading">Welcome To Our Studio!</div>
-          <div className="masthead-heading text-uppercase">this Home Page</div>
+        <div className="masthead-subheading">
+          <div className="masthead-heading text-uppercase">this About Page</div>
           <button
             className="btn btn-primary btn-xl text-uppercase"
             onClick={handleClick}
           >
-            About
+            Home
           </button>
         </div>
       </header>
     </div>
   )
 }
-
-export default Home
+export default About
